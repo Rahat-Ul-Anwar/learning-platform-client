@@ -1,12 +1,14 @@
-# Getting Started with Create React App
+# WEbsite Details
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ 
 
-## Available Scripts
+## Project Name :
 
-In the project directory, you can run:
+ Learning Management System.
 
-### `npm start`
+### `Live site`
+
+https://learning-management-app-13874.web.app/
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
