@@ -7,7 +7,9 @@ import Home from "../components/Home/Home";
 import Login from "../components/Login/Login";
 import NoResult from "../components/NoResult/NoResult";
 import Register from "../components/Register/Register";
+import Checkout from "../components/Checkout/Checkout";
 import Main from "../layout/Main";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 
 export const routes = createBrowserRouter([
@@ -49,6 +51,10 @@ export const routes = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register></Register>
+           },  
+            {
+                path: '/checkout',
+                element: <PrivateRoute><Checkout></Checkout></PrivateRoute>
            },  
             {
                 path: '*',

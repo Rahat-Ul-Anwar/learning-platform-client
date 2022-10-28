@@ -20,6 +20,15 @@ const AuthProvider = ({ children }) => {
         return signInWithPopup(auth, provider);
     }
 
+    // login with github
+
+    const githubLogIn = (gitProvider) => {
+
+        signInWithPopup(auth, gitProvider);
+        
+
+    }
+
   // create user for registration using email and password authentication.
 
     const createUser = (email, password, photoURL, name) => {
@@ -65,7 +74,7 @@ const AuthProvider = ({ children }) => {
 
 
 
-    const authInfo = { user, loading, providerLogin, logOut , createUser, signIn};
+    const authInfo = { user, loading, providerLogin, logOut , createUser, signIn, githubLogIn};
     
     return (
         <AuthContext.Provider value={authInfo}>

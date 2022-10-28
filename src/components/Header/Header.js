@@ -62,8 +62,8 @@ const Header = () => {
                                        
                                         :
                                         <>
-                                            <Link to='/login'>Login</Link>
-                                            <Link to='/register'>Register</Link>
+                                            <Link className='me-3 text-white text-decoration-none'to='/login'>Login</Link>
+                                            <Link className='me-3 text-white text-decoration-none'to='/register'>Register</Link>
                                              
                                         </>
                                     
