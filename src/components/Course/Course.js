@@ -17,7 +17,7 @@ const Course = ({ course }) => {
 
 
     return (
-                <Card style={{ width: '500px' }} className="m-2">
+                <Card style={{ width: '400px' }} className="mt-2 p-5 mx-auto">
                     <Card.Img variant="top" src={img} style={{height:"200px"}}/>
                         <Card.Body>
                             <Card.Title>{name}</Card.Title>

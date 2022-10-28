@@ -9,7 +9,7 @@ const CourseDetails = () => {
     const info = useLoaderData();
     const { img, name, details, price } = info;
     return (
-        <Card style={{ width: '500px' }} className='mx-auto'>
+        <Card style={{ width: '400px' }} className='mx-auto'>
             <Card.Img variant="top" src={img} />
             <Card.Body>
                 <Card.Title>{name}</Card.Title>
@@ -23,7 +23,7 @@ const CourseDetails = () => {
               <Button variant="danger"> <Link to='/checkout' className='text-decoration-none text-white'>Get Premium access</Link></Button>
 
             </Card.Body>
-    </Card>
+        </Card>
        
     );
 };

@@ -16,14 +16,18 @@ const Courses = () => {
                     <CourseList courses={courses}></CourseList>
                 </Col>
                 <Col lg="9" sm="1">
-                {
+                    <Row>
+                        <Col className='col-lg-4'>
+                        {
                  
-                 courses.map(course => <Course key={course.id} course={course}>
+                             courses.map(course => <Course key={course.id} course={course}>
            
                       
-            </Course>)
+                        </Course>)
 
                  }
+                        </Col>
+                   </Row>
                 </Col>
             </Row>
         </Container>
