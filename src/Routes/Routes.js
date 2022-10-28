@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Blog from "../components/Blog/Blog";
+import CourseDetails from "../components/CourseDetails/CourseDetails";
 import Courses from "../components/Courses/Courses";
 import FAQ from "../components/FAQ/FAQ";
 import Home from "../components/Home/Home";
@@ -29,7 +30,17 @@ export const routes = createBrowserRouter([
            
             {
                 path: '/courses',
+                loader: () => {
+                    return fetch('https://b610-lerning-platform-server-side-rahat-ul-anwar.vercel.app/courses'); 
+                },
                 element: <Courses></Courses>
+           },  
+            {
+                path: '/courses/:id',
+                loader: ({params}) => {
+                    return fetch(`https://b610-lerning-platform-server-side-rahat-ul-anwar.vercel.app/courses/${params.id}`); 
+                },
+                element:  <CourseDetails></CourseDetails>
            },  
             {
                 path: '/login',
